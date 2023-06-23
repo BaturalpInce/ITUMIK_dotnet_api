@@ -8,7 +8,10 @@ While the server is running, you can send requests and there are 4 request type 
 
 Provides all the topics with no values.
 
-Example output: ["Floor1/Desk1","Floor1/Desk2","Floor2/Desk3","Floor2/Desk4","Floor2/Desk5"]
+Example output: 
+```json
+["Floor1/Desk1","Floor1/Desk2","Floor2/Desk3","Floor2/Desk4","Floor2/Desk5"]
+```
 
 - http://localhost:5000/api/alldatalist
 
@@ -18,13 +21,19 @@ Provides the complete data containing all the floors with Mongo ID's.
 
 Provides all the desks on a spesific floor.
 
-Example output: [{"topic":"Floor1/Desk1","values":{"Chair01":true,"Chair02":true,"Chair03":false,"Chair04":true}},{"topic":"Floor1/Desk2","values":{"Chair05":true,"Chair06":false,"Chair07":true,"Chair08":false}}]
+Example output: 
+```json
+[{"topic":"Floor1/Desk1","values":{"Chair01":true,"Chair02":true,"Chair03":false,"Chair04":true}},{"topic":"Floor1/Desk2","values":{"Chair05":true,"Chair06":false,"Chair07":true,"Chair08":false}}]
+```
 
 - http://localhost:5000/api/Floor1/Desk2
 
 Provides a spesific desk on a spesific floor.
 
-Example output: [{"topic":"Floor1/Desk1","values":{"Chair01":true,"Chair02":true,"Chair03":false,"Chair04":true}}]
+Example output: 
+```json
+[{"topic":"Floor1/Desk1","values":{"Chair01":true,"Chair02":true,"Chair03":false,"Chair04":true}}]
+```
 
 ## How to Run?
 On Visual Studio:
